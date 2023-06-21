@@ -1,0 +1,31 @@
+
+/* 메뉴  menu.css로 추출 */
+header{width: 100%; position: fixed; z-index: 10;
+    left:0; top:0; background-color: #fff;
+    border-bottom: solid 1px #000;
+    padding:10px 0px;}
+
+  .logo {text-align: center;}      
+  nav ul{text-align: center; margin-top:20px;}
+  nav ul li{display: inline; cursor: pointer;}
+  nav ul li {color:#000;padding:10px;text-decoration: none;}
+  nav ul li:hover{color:rgb(253, 4, 83);}
+
+/* 밑줄넣기 부분 */
+
+li>span{position: relative;}
+
+li>span::after {
+    position: absolute;  transition: all 0.5s;
+    content:''; /* 내용 모두를 의미 */
+    display: block; /* 나중에 width값 100% 주기 위해 block */
+    width:0%; height: 1px; /* 글자 / 선 간격으로 사용됨 */
+    border-bottom: 2px solid rgb(253, 4, 83);
+   /*  left:0%;  왼쪽에서 라인이 나타남 */
+    left:50%;   /* 중앙에서 라인이 나타남 */
+}
+li:hover > span::after {
+    width:100%; 
+    left:0px; /* 왼쪽에서 라인을 등장시킬때는 주석으로 만들것 */
+  
+}   

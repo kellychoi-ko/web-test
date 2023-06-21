@@ -1,0 +1,10 @@
+/* 공통  style.css 추출   */
+/* 본인이 원하는 구글웹폰트로 메뉴 글자 바꿀것      */
+body{margin: 0px; padding: 0px;
+     font-family: 'Roboto','Noto Sans KR', sans-serif;
+     list-style: none;
+     box-sizing: border-box;    
+     text-decoration: none;
+    }
+.container{width:1400px; margin:0 auto;padding-top:200px; }
+section img{width: 100%;}
